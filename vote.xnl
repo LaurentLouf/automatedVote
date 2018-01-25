@@ -1,0 +1,375 @@
+####################################
+#         System information       #
+####################################
+# Date:                   2017:09:16 
+# Time:                   21:59:59 
+# Xnee program:           cnee 
+# Xnee version:           3.19 
+# Xnee home:              http://www.gnu.org/software/xnee/ 
+# Xnee info mailing list: info-xnee@gnu.org 
+# Xnee bug mailing list:  bug-xnee@gnu.org 
+# X version:              11 
+# X revision:             0 
+# X vendor:               The X.Org Foundation 
+# X vendor release:       11804000 
+# Record version major:   1
+# Record version minor:   13
+# OS name:                Linux 
+# OS Release:             4.8.0-59-generic 
+# OS Version:             #64-Ubuntu SMP Thu Jun 29 19:38:34 UTC 2017 
+# Machine:                x86_64 
+# Nodename:               laurent-MS-7850 
+# Display name:           :0
+# Dimension:              1920x1080
+
+##################################
+#     Information scripting      #
+##################################
+# Simply press a key on keyboard, example with Tab (=23)
+# 7,2,0,0,0,23,0,6054800,12,Logitech K270
+# 6,2,0,0,0,23,0,6054800,3,Virtual core keyboard
+# 7,3,0,0,0,23,0,6054900,12,Logitech K270
+# 6,3,0,0,0,23,0,6054900,3,Virtual core keyboard
+
+# Space : replace 23 by 65
+# Enter : replace 23 by 36
+# Alt   : replace 23 by 64
+# F4    : replace 23 by 70
+
+# Press a key and hold (Ctrl=37), press a second key (W=52), release both (result Ctrl + W pressed and released)
+# 7,2,0,0,0,37,0,6061600,12,Logitech K270
+# 6,2,0,0,0,37,0,6061600,3,Virtual core keyboard
+# 7,2,0,0,0,52,0,6062500,12,Logitech K270
+# 6,2,0,0,0,52,0,6062500,3,Virtual core keyboard
+# 7,3,0,0,0,37,0,6062600,12,Logitech K270
+# 6,3,0,0,0,37,0,6062600,3,Virtual core keyboard
+# 7,3,0,0,0,52,0,6062600,12,Logitech K270
+# 6,3,0,0,0,52,0,6062600,3,Virtual core keyboard
+
+# Time is the second argument after the code for the key pressed (6062681 for the last of example above)
+# Time is expressed in ms
+
+##############################################
+#      Xnee application arguments            #
+##############################################
+#  cnee --record --keyboard --out-file vote2.xnl 
+
+
+##############################################
+#      Displays                              #
+##############################################
+# display :0
+# distribute
+
+
+##############################################
+#      Files                                 #
+##############################################
+# out-file vote2.xnl
+# err-file stderr
+
+
+##############################################
+#      Key Grabs                             #
+##############################################
+# stop-key         0
+# pause-key        0
+# resume-key       0
+# insert-key       0
+# exec-key         0
+# exec-program-key         xnee-exec-no-program
+
+
+##############################################
+#      Recording limits etc                  #
+##############################################
+
+events-to-record        -1
+data-to-record          -1
+seconds-to-record       -1
+# first-last
+
+# Record  all (including current) clients or only future ones
+all-clients
+# future-clients
+
+# Store the starting mouse position 
+# store-mouse-position
+
+
+##############################################
+#      Resolution                            #
+##############################################
+
+# Resolution
+#recorded-resolution  1920x1080
+#replay-resolution  1x1
+#resolution-adjustment  0
+
+
+##############################################
+#      Speed                                 #
+##############################################
+
+# Speed
+#speed-percent  100
+
+
+##############################################
+#      Replaying limits etc                  #
+##############################################
+
+max-threshold 20 
+min-threshold 20 
+tot-threshold 40 
+
+
+##############################################
+#      Feedback                              #
+##############################################
+#feedback-none
+#feedback-stderr
+feedback-xosd
+ 
+
+
+##############################################
+#      Various                               #
+##############################################
+
+# Plugin file 
+
+# Modes (currently not used)
+# synchronised-replay
+
+# Replay offset
+#replay-offset 0x0
+
+# Human printout of X11 data (instead of Xnee format)
+# human-printout  
+
+# Delay before starting record/replay
+# time 0
+
+# No recording of ReparentNotify
+# no-reparent-recording 
+
+# Various
+#########################################
+#          Record settings              #
+#########################################
+#   data_flags          7
+#   rState              0xa3e020
+#   xids[0]             3
+#   xids[1]             0
+# Number of Ranges      2
+# RecordRange[0]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         21-21 
+device-event-range            2-3 
+error-range                   0-0 
+# RecordRange[1]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         0-0 
+device-event-range            67-68 
+error-range                   0-0 
+7,2,0,0,0,23,0,6053400,12,Logitech K270
+6,2,0,0,0,23,0,6053400,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053450,12,Logitech K270
+6,3,0,0,0,23,0,6053450,3,Virtual core keyboard
+7,2,0,0,0,23,0,6053500,12,Logitech K270
+6,2,0,0,0,23,0,6053500,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053550,12,Logitech K270
+6,3,0,0,0,23,0,6053550,3,Virtual core keyboard
+7,2,0,0,0,23,0,6053600,12,Logitech K270
+6,2,0,0,0,23,0,6053600,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053650,12,Logitech K270
+6,3,0,0,0,23,0,6053650,3,Virtual core keyboard
+7,2,0,0,0,23,0,6053700,12,Logitech K270
+6,2,0,0,0,23,0,6053700,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053750,12,Logitech K270
+6,3,0,0,0,23,0,6053750,3,Virtual core keyboard
+7,2,0,0,0,23,0,6053800,12,Logitech K270
+6,2,0,0,0,23,0,6053800,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053850,12,Logitech K270
+6,3,0,0,0,23,0,6053850,3,Virtual core keyboard
+7,2,0,0,0,23,0,6053900,12,Logitech K270
+6,2,0,0,0,23,0,6053900,3,Virtual core keyboard
+7,3,0,0,0,23,0,6053950,12,Logitech K270
+6,3,0,0,0,23,0,6053950,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054000,12,Logitech K270
+6,2,0,0,0,23,0,6054000,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054050,12,Logitech K270
+6,3,0,0,0,23,0,6054050,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054100,12,Logitech K270
+6,2,0,0,0,23,0,6054100,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054150,12,Logitech K270
+6,3,0,0,0,23,0,6054150,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054200,12,Logitech K270
+6,2,0,0,0,23,0,6054200,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054250,12,Logitech K270
+6,3,0,0,0,23,0,6054250,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054300,12,Logitech K270
+6,2,0,0,0,23,0,6054300,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054350,12,Logitech K270
+6,3,0,0,0,23,0,6054350,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054400,12,Logitech K270
+6,2,0,0,0,23,0,6054400,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054550,12,Logitech K270
+6,3,0,0,0,23,0,6054550,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054600,12,Logitech K270
+6,2,0,0,0,23,0,6054600,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054650,12,Logitech K270
+6,3,0,0,0,23,0,6054650,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054700,12,Logitech K270
+6,2,0,0,0,23,0,6054700,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054750,12,Logitech K270
+6,3,0,0,0,23,0,6054750,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054800,12,Logitech K270
+6,2,0,0,0,23,0,6054800,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054850,12,Logitech K270
+6,3,0,0,0,23,0,6054850,3,Virtual core keyboard
+7,2,0,0,0,23,0,6054900,12,Logitech K270
+6,2,0,0,0,23,0,6054900,3,Virtual core keyboard
+7,3,0,0,0,23,0,6054950,12,Logitech K270
+6,3,0,0,0,23,0,6054950,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055000,12,Logitech K270
+6,2,0,0,0,23,0,6055000,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055050,12,Logitech K270
+6,3,0,0,0,23,0,6055050,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055100,12,Logitech K270
+6,2,0,0,0,23,0,6055100,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055150,12,Logitech K270
+6,3,0,0,0,23,0,6055150,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055200,12,Logitech K270
+6,2,0,0,0,23,0,6055200,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055250,12,Logitech K270
+6,3,0,0,0,23,0,6055250,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055300,12,Logitech K270
+6,2,0,0,0,23,0,6055300,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055350,12,Logitech K270
+6,3,0,0,0,23,0,6055350,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055400,12,Logitech K270
+6,2,0,0,0,23,0,6055400,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055450,12,Logitech K270
+6,3,0,0,0,23,0,6055450,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055500,12,Logitech K270
+6,2,0,0,0,23,0,6055500,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055550,12,Logitech K270
+6,3,0,0,0,23,0,6055550,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055600,12,Logitech K270
+6,2,0,0,0,23,0,6055600,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055650,12,Logitech K270
+6,3,0,0,0,23,0,6055650,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055700,12,Logitech K270
+6,2,0,0,0,23,0,6055700,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055750,12,Logitech K270
+6,3,0,0,0,23,0,6055750,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055800,12,Logitech K270
+6,2,0,0,0,23,0,6055800,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055850,12,Logitech K270
+6,3,0,0,0,23,0,6055850,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055900,12,Logitech K270
+6,2,0,0,0,23,0,6055900,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055950,12,Logitech K270
+6,3,0,0,0,23,0,6055950,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056000,12,Logitech K270
+6,2,0,0,0,23,0,6056000,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056050,12,Logitech K270
+6,3,0,0,0,23,0,6056050,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056100,12,Logitech K270
+6,2,0,0,0,23,0,6056100,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056150,12,Logitech K270
+6,3,0,0,0,23,0,6056150,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056200,12,Logitech K270
+6,2,0,0,0,23,0,6056200,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056250,12,Logitech K270
+6,3,0,0,0,23,0,6056250,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056300,12,Logitech K270
+6,2,0,0,0,23,0,6056300,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056350,12,Logitech K270
+6,3,0,0,0,23,0,6056350,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055400,12,Logitech K270
+6,2,0,0,0,23,0,6055400,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055450,12,Logitech K270
+6,3,0,0,0,23,0,6055450,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055500,12,Logitech K270
+6,2,0,0,0,23,0,6055500,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055550,12,Logitech K270
+6,3,0,0,0,23,0,6055550,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055600,12,Logitech K270
+6,2,0,0,0,23,0,6055600,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055650,12,Logitech K270
+6,3,0,0,0,23,0,6055650,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055700,12,Logitech K270
+6,2,0,0,0,23,0,6055700,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055750,12,Logitech K270
+6,3,0,0,0,23,0,6055750,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055800,12,Logitech K270
+6,2,0,0,0,23,0,6055800,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055850,12,Logitech K270
+6,3,0,0,0,23,0,6055850,3,Virtual core keyboard
+7,2,0,0,0,23,0,6055900,12,Logitech K270
+6,2,0,0,0,23,0,6055900,3,Virtual core keyboard
+7,3,0,0,0,23,0,6055950,12,Logitech K270
+6,3,0,0,0,23,0,6055950,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056000,12,Logitech K270
+6,2,0,0,0,23,0,6056000,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056050,12,Logitech K270
+6,3,0,0,0,23,0,6056050,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056100,12,Logitech K270
+6,2,0,0,0,23,0,6056100,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056150,12,Logitech K270
+6,3,0,0,0,23,0,6056150,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056200,12,Logitech K270
+6,2,0,0,0,23,0,6056200,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056250,12,Logitech K270
+6,3,0,0,0,23,0,6056250,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056300,12,Logitech K270
+6,2,0,0,0,23,0,6056300,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056350,12,Logitech K270
+6,3,0,0,0,23,0,6056350,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056400,12,Logitech K270
+6,2,0,0,0,23,0,6056400,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056450,12,Logitech K270
+6,3,0,0,0,23,0,6056450,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056500,12,Logitech K270
+6,2,0,0,0,23,0,6056500,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056550,12,Logitech K270
+6,3,0,0,0,23,0,6056550,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056600,12,Logitech K270
+6,2,0,0,0,23,0,6056600,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056750,12,Logitech K270
+6,3,0,0,0,23,0,6056750,3,Virtual core keyboard
+7,2,0,0,0,23,0,6056700,12,Logitech K270
+6,2,0,0,0,23,0,6056700,3,Virtual core keyboard
+7,3,0,0,0,23,0,6056850,12,Logitech K270
+6,3,0,0,0,23,0,6056850,3,Virtual core keyboard
+#7,2,0,0,0,23,0,6056900,12,Logitech K270
+#6,2,0,0,0,23,0,6056900,3,Virtual core keyboard
+#7,3,0,0,0,23,0,6056950,12,Logitech K270
+#6,3,0,0,0,23,0,6056950,3,Virtual core keyboard
+## Space
+7,2,0,0,0,65,0,6058000,12,Logitech K270
+6,2,0,0,0,65,0,6058000,3,Virtual core keyboard
+7,3,0,0,0,65,0,6058100,12,Logitech K270
+6,3,0,0,0,65,0,6058100,3,Virtual core keyboard
+## Ctrl W
+#7,2,0,0,0,37,0,6059500,12,Logitech K270
+#6,2,0,0,0,37,0,6059500,3,Virtual core keyboard
+#7,2,0,0,0,52,0,6059600,12,Logitech K270
+#6,2,0,0,0,52,0,6059600,3,Virtual core keyboard
+#7,3,0,0,0,37,0,6059700,12,Logitech K270
+#6,3,0,0,0,37,0,6059700,3,Virtual core keyboard
+#7,3,0,0,0,52,0,6059800,12,Logitech K270
+#6,3,0,0,0,52,0,6059800,3,Virtual core keyboard

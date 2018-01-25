@@ -1,0 +1,194 @@
+####################################
+#         System information       #
+####################################
+# Date:                   2018:01:24 
+# Time:                   22:45:02 
+# Xnee program:           cnee 
+# Xnee version:           3.19 
+# Xnee home:              http://www.gnu.org/software/xnee/ 
+# Xnee info mailing list: info-xnee@gnu.org 
+# Xnee bug mailing list:  bug-xnee@gnu.org 
+# X version:              11 
+# X revision:             0 
+# X vendor:               The X.Org Foundation 
+# X vendor release:       11804000 
+# Record version major:   1
+# Record version minor:   13
+# OS name:                Linux 
+# OS Release:             4.8.0-59-generic 
+# OS Version:             #64-Ubuntu SMP Thu Jun 29 19:38:34 UTC 2017 
+# Machine:                x86_64 
+# Nodename:               laurent-MS-7850 
+# Display name:           :0
+# Dimension:              1920x1080
+
+##################################
+#     Information scripting      #
+##################################
+# Simply press a key on keyboard, example with Tab (=23)
+# 7,2,0,0,0,23,0,6054800,12,Logitech K270
+# 6,2,0,0,0,23,0,6054800,3,Virtual core keyboard
+# 7,3,0,0,0,23,0,6054900,12,Logitech K270
+# 6,3,0,0,0,23,0,6054900,3,Virtual core keyboard
+
+# Space : replace 23 by 65
+# Enter : replace 23 by 36
+# Alt   : replace 23 by 64
+# F4    : replace 23 by 70
+
+# Press a key and hold (Ctrl=37), press a second key (W=52), release both (result Ctrl + W pressed and released)
+# 7,2,0,0,0,37,0,6061600,12,Logitech K270
+# 6,2,0,0,0,37,0,6061600,3,Virtual core keyboard
+# 7,2,0,0,0,52,0,6062500,12,Logitech K270
+# 6,2,0,0,0,52,0,6062500,3,Virtual core keyboard
+# 7,3,0,0,0,37,0,6062600,12,Logitech K270
+# 6,3,0,0,0,37,0,6062600,3,Virtual core keyboard
+# 7,3,0,0,0,52,0,6062600,12,Logitech K270
+# 6,3,0,0,0,52,0,6062600,3,Virtual core keyboard
+
+# Time is the second argument after the code for the key pressed (6062681 for the last of example above)
+# Time is expressed in ms
+
+##############################################
+#      Xnee application arguments            #
+##############################################
+#  cnee --record --keyboard --out-file vote2.xnl 
+
+
+##############################################
+#      Displays                              #
+##############################################
+# display :0
+# distribute
+
+
+##############################################
+#      Files                                 #
+##############################################
+# out-file vote2.xnl
+# err-file stderr
+
+
+##############################################
+#      Key Grabs                             #
+##############################################
+# stop-key         0
+# pause-key        0
+# resume-key       0
+# insert-key       0
+# exec-key         0
+# exec-program-key         xnee-exec-no-program
+
+
+##############################################
+#      Recording limits etc                  #
+##############################################
+
+events-to-record        -1
+data-to-record          -1
+seconds-to-record       -1
+# first-last
+
+# Record  all (including current) clients or only future ones
+all-clients
+# future-clients
+
+# Store the starting mouse position 
+# store-mouse-position
+
+
+##############################################
+#      Resolution                            #
+##############################################
+
+# Resolution
+#recorded-resolution  1920x1080
+#replay-resolution  1x1
+#resolution-adjustment  0
+
+
+##############################################
+#      Speed                                 #
+##############################################
+
+# Speed
+#speed-percent  100
+
+
+##############################################
+#      Replaying limits etc                  #
+##############################################
+
+max-threshold 20 
+min-threshold 20 
+tot-threshold 40 
+
+
+##############################################
+#      Feedback                              #
+##############################################
+#feedback-none
+#feedback-stderr
+feedback-xosd
+ 
+
+
+##############################################
+#      Various                               #
+##############################################
+
+# Plugin file 
+
+# Modes (currently not used)
+# synchronised-replay
+
+# Replay offset
+#replay-offset 0x0
+
+# Human printout of X11 data (instead of Xnee format)
+# human-printout  
+
+# Delay before starting record/replay
+# time 0
+
+# No recording of ReparentNotify
+# no-reparent-recording 
+
+# Various
+#########################################
+#          Record settings              #
+#########################################
+#   data_flags          7
+#   rState              0x1c44020
+#   xids[0]             3
+#   xids[1]             0
+# Number of Ranges      2
+# RecordRange[0]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         21-21 
+device-event-range            2-3 
+error-range                   0-0 
+# RecordRange[1]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         0-0 
+device-event-range            67-68 
+error-range                   0-0 
+7,2,0,0,0,64,0,14733837,12,Logitech K270
+6,2,0,0,0,64,0,14733838,3,Virtual core keyboard
+7,2,0,0,0,70,0,14734749,12,Logitech K270
+6,2,0,0,0,70,0,14734750,3,Virtual core keyboard
+7,3,0,0,0,70,0,14734909,12,Logitech K270
+6,3,0,0,0,70,0,14734909,3,Virtual core keyboard
+7,3,0,0,0,64,0,14734989,12,Logitech K270
+6,3,0,0,0,64,0,14734989,3,Virtual core keyboard
+
